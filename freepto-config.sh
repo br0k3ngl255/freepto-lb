@@ -28,7 +28,7 @@ getTempFile()
 }
 
 # Set defaults values
-USERNAME="paranoid"
+USERNAME="pirata"
 LINUX_FLAVOURS="amd64 486"
 LOCALE="it_IT.UTF-8"
 ZONE="Europe/Rome"
@@ -146,10 +146,10 @@ lb config noauto \
     --backports true \
     --checksums sha256 \
     --system live \
-    --hdd-label FREEPTO \
+    --hdd-label PIRATIAN \
     --apt-source-archives false \
-    --debian-installer false \
-    --debian-installer-gui false \
+    --debian-installer true \
+    --debian-installer-gui true \
     --bootappend-install noprompt \
     --bootappend-live "\
     boot=live \
@@ -159,7 +159,7 @@ lb config noauto \
     persistence-media=removable-usb \
     username=$USERNAME \
     nottyautologin \
-    hostname=freepto \
+    hostname=piratian \
     user-fullname=$USERNAME \
     persistence \
     live-config.timezone='$ZONE' \

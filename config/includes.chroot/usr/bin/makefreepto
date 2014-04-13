@@ -106,7 +106,7 @@ persistence_create() {
 
     local mapname="my_usb.$$"
     local mapper="/dev/mapper/$mapname"
-    local mountpoint="/mnt/freepto.$$"
+    local mountpoint="/mnt/piratian.$$"
     # open LUKS
     cryptsetup luksOpen "$1" "$mapname" <<<${passphrase} || exit 1
 
@@ -130,7 +130,7 @@ persistence_create() {
     sync
     sleep 5
     #cleanup
-    umount /mnt/freepto.$$ 2>&1
+    umount /mnt/piratian.$$ 2>&1
     cryptsetup luksClose /dev/mapper/my_usb.$$ 2>&1
     rm -rf "$mountpoint" 2>&1
 }
