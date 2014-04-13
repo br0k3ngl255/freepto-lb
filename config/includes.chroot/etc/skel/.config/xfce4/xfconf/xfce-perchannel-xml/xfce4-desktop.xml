@@ -18,7 +18,7 @@
           <value type="uint" value="65535"/>
         </property>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/usr/share/xfce4/backdrops/subaddiction_wem_2014.png"/>
+        <property name="image-path" type="string" value="/usr/share/xfce4/backdrops/freepto_piratian_wallpaper.png"/>
         <property name="image-show" type="empty"/>
         <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/subaddiction_wem_2014.png"/>
         <property name="last-single-image" type="string" value="/usr/share/xfce4/backdrops/subaddiction_wem_2014.png"/>
